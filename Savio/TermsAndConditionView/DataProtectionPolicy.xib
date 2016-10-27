@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+        </mutableArray>
+        <mutableArray key="gotham-rounded-book-2.otf">
+            <string>GothamRounded-Book</string>
+            <string>GothamRounded-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DataProtectionPolicy" customModule="Savio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfu-Ja-0iP">
+                    <rect key="frame" x="10" y="10" width="580" height="580"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Protection Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lc-gf-cFv">
+                            <rect key="frame" x="10" y="40" width="191" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="191" id="0gO-LU-P7T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KT-wl-Jhc">
+                            <rect key="frame" x="10" y="70" width="70" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="bLe-hn-OrX"/>
+                                <constraint firstAttribute="height" constant="21" id="elY-gl-KUR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVG-fE-0ko">
+                            <rect key="frame" x="10" y="94" width="560" height="392"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda..</string>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                        </textView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGX-Se-sAE">
+                            <rect key="frame" x="10" y="510" width="560" height="42"/>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.63137254899999995" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="TWZ-Wb-j1x"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zp-wc-6gL">
+                            <rect key="frame" x="10" y="510" width="560" height="40"/>
+                            <color key="backgroundColor" red="0.36470588240000001" green="0.37254901959999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ee9-rn-sSA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                    <color key="value" red="0.95294117649999999" green="0.68627450980000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                    <size key="value" width="0.0" height="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="backButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="RgU-ob-W6o"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6lc-gf-cFv" firstAttribute="top" secondItem="Zfu-Ja-0iP" secondAttribute="top" constant="40" id="1F6-Q7-rWr"/>
+                        <constraint firstItem="HVG-fE-0ko" firstAttribute="leading" secondItem="Zfu-Ja-0iP" secondAttribute="leading" constant="10" id="9sU-1g-LOM"/>
+                        <constraint firstAttribute="trailing" secondItem="HVG-fE-0ko" secondAttribute="trailing" constant="10" id="HrD-6r-0aU"/>
+                        <constraint firstItem="4zp-wc-6gL" firstAttribute="centerX" secondItem="Zfu-Ja-0iP" secondAttribute="centerX" id="HvU-ED-OrR"/>
+                        <constraint firstItem="BGX-Se-sAE" firstAttribute="top" secondItem="HVG-fE-0ko" secondAttribute="bottom" constant="24" id="VsF-XD-MQO"/>
+                        <constraint firstItem="9KT-wl-Jhc" firstAttribute="top" secondItem="6lc-gf-cFv" secondAttribute="bottom" constant="15" id="WUu-Dl-AGf"/>
+                        <constraint firstItem="9KT-wl-Jhc" firstAttribute="leading" secondItem="Zfu-Ja-0iP" secondAttribute="leading" constant="10" id="Z3O-Cm-634"/>
+                        <constraint firstAttribute="trailing" secondItem="4zp-wc-6gL" secondAttribute="trailing" constant="10" id="Zk9-Wi-VfV"/>
+                        <constraint firstItem="6lc-gf-cFv" firstAttribute="leading" secondItem="9KT-wl-Jhc" secondAttribute="leading" id="gpS-kc-aqc"/>
+                        <constraint firstItem="HVG-fE-0ko" firstAttribute="top" secondItem="9KT-wl-Jhc" secondAttribute="bottom" constant="3" id="hFu-qh-Ee6"/>
+                        <constraint firstItem="4zp-wc-6gL" firstAttribute="leading" secondItem="Zfu-Ja-0iP" secondAttribute="leading" constant="10" id="hXE-ZN-tRK"/>
+                        <constraint firstItem="HVG-fE-0ko" firstAttribute="centerY" secondItem="Zfu-Ja-0iP" secondAttribute="centerY" id="j0h-gn-vB9"/>
+                        <constraint firstItem="4zp-wc-6gL" firstAttribute="top" secondItem="HVG-fE-0ko" secondAttribute="bottom" constant="24" id="leY-4h-e3d"/>
+                        <constraint firstAttribute="trailing" secondItem="BGX-Se-sAE" secondAttribute="trailing" constant="10" id="pdA-FZ-1Nn"/>
+                        <constraint firstItem="BGX-Se-sAE" firstAttribute="leading" secondItem="Zfu-Ja-0iP" secondAttribute="leading" constant="10" id="rQl-o0-dah"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Zfu-Ja-0iP" secondAttribute="bottom" constant="10" id="Lzk-Ha-XCH"/>
+                <constraint firstItem="Zfu-Ja-0iP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Xsm-Zp-eMN"/>
+                <constraint firstAttribute="trailing" secondItem="Zfu-Ja-0iP" secondAttribute="trailing" constant="10" id="d0Z-7Q-NtE"/>
+                <constraint firstItem="Zfu-Ja-0iP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="hYF-qa-70j"/>
+            </constraints>
+            <connections>
+                <outlet property="backButton" destination="4zp-wc-6gL" id="cW3-j6-x8k"/>
+                <outlet property="btnVeBg" destination="BGX-Se-sAE" id="o4H-5b-wiF"/>
+                <outlet property="dataPolicyAndTermsTextView" destination="HVG-fE-0ko" id="gGB-xp-Rxu"/>
+                <outlet property="lblHeading" destination="6lc-gf-cFv" id="WPa-q4-whl"/>
+            </connections>
+            <point key="canvasLocation" x="370" y="320"/>
+        </view>
+    </objects>
+</document>

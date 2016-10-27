@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRounded-Light.otf">
+            <string>GothamRounded-Light</string>
+        </mutableArray>
+        <mutableArray key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HurreyViewController" customModule="Savio" customModuleProvider="target">
+            <connections>
+                <outlet property="btn" destination="xEm-qu-yo9" id="uTD-tm-ZY8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savivo-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="YAh-VO-ioi">
+                    <rect key="frame" x="275" y="42" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="YAh-VO-ioi" secondAttribute="height" multiplier="1:1" id="P84-YQ-gMy"/>
+                        <constraint firstAttribute="width" constant="50" id="TYF-BH-pEH"/>
+                        <constraint firstAttribute="height" constant="50" id="ogg-N5-oSy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hooray,                    you'r all set up" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srb-ZI-X44">
+                    <rect key="frame" x="177" y="113" width="246" height="73"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="246" id="NHZ-a2-m0f"/>
+                        <constraint firstAttribute="width" secondItem="srb-ZI-X44" secondAttribute="height" multiplier="246:73" id="RYl-Dh-IqS"/>
+                        <constraint firstAttribute="height" constant="73" id="bJc-RS-5oD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="33"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's go create a new saving plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl4-Vf-3Td">
+                    <rect key="frame" x="158" y="213" width="283" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Dv6-SE-Zr0"/>
+                        <constraint firstAttribute="width" secondItem="Kl4-Vf-3Td" secondAttribute="height" multiplier="283:21" id="OOc-Mw-EH0"/>
+                        <constraint firstAttribute="width" constant="283" id="VZd-xw-Bmv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-qu-yo9">
+                    <rect key="frame" x="30" y="406" width="540" height="51"/>
+                    <color key="backgroundColor" red="1" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="540" id="7xe-7R-FKX"/>
+                        <constraint firstAttribute="height" constant="51" id="FmS-H7-mQf"/>
+                        <constraint firstAttribute="width" secondItem="xEm-qu-yo9" secondAttribute="height" multiplier="180:17" id="bXQ-9C-jmY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="24"/>
+                    <state key="normal" title="Create a plan">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Kl4-Vf-3Td" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FmF-QL-WjY"/>
+                <constraint firstItem="xEm-qu-yo9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="HJl-M2-443"/>
+                <constraint firstItem="YAh-VO-ioi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pg4-hT-2tT"/>
+                <constraint firstAttribute="trailing" secondItem="xEm-qu-yo9" secondAttribute="trailing" constant="30" id="aNu-xR-TqH"/>
+                <constraint firstItem="srb-ZI-X44" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cMg-GF-vpM"/>
+                <constraint firstItem="Kl4-Vf-3Td" firstAttribute="top" secondItem="srb-ZI-X44" secondAttribute="bottom" constant="27" id="ezv-lJ-c68"/>
+                <constraint firstAttribute="bottom" secondItem="xEm-qu-yo9" secondAttribute="bottom" constant="143" id="feI-TH-v8Z"/>
+                <constraint firstItem="YAh-VO-ioi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="pAk-Cu-7NA"/>
+                <constraint firstItem="srb-ZI-X44" firstAttribute="top" secondItem="YAh-VO-ioi" secondAttribute="bottom" constant="21" id="wjy-Ty-YJH"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="savivo-logo.png" width="80" height="80"/>
+    </resources>
+</document>

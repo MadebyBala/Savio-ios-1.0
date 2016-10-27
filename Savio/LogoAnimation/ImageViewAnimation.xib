@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImageViewAnimation" customModule="Savio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpT-R4-93g">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3sh-OZ-4w0">
+                    <rect key="frame" x="262" y="263" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="EC4-i6-rqV"/>
+                        <constraint firstAttribute="height" constant="75" id="LuG-hV-eZi"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cpT-R4-93g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1KI-9z-blC"/>
+                <constraint firstItem="3sh-OZ-4w0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4Ex-XJ-xgL"/>
+                <constraint firstItem="3sh-OZ-4w0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AZP-W7-JhY"/>
+                <constraint firstAttribute="trailing" secondItem="cpT-R4-93g" secondAttribute="trailing" id="FeG-CC-4tu"/>
+                <constraint firstAttribute="bottom" secondItem="cpT-R4-93g" secondAttribute="bottom" id="UBv-Xp-IEI"/>
+                <constraint firstItem="cpT-R4-93g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zP6-vt-0dM"/>
+            </constraints>
+            <connections>
+                <outlet property="animationImageView" destination="3sh-OZ-4w0" id="bWz-TH-ICX"/>
+            </connections>
+            <point key="canvasLocation" x="363" y="235"/>
+        </view>
+    </objects>
+</document>

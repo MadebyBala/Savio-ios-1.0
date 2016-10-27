@@ -1,0 +1,285 @@
+[
+ {
+ "classType":"SavioLogoTableViewCell",
+ "metaData":{},
+ "Height": 120
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"We need to know your title and name",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ }
+ },
+ "Height": 35
+ },
+ {
+ "classType":"TitleTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Title",
+ "dropDownArray":["Mr.","Ms."],
+ "text":""
+ },
+ "textField2":{
+ "placeholder":"Name",
+ "dropDownArray":[],
+ "text":""
+ },
+ },
+ "Height": 40
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"Wow, thats such a long name we can't save it",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ 
+ }
+ },
+ "Height": 35
+ },
+ 
+ {
+ "classType":"TxtFieldTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Surname",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"We need to know your date of birth",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ }
+ },
+ "Height": 35
+ },
+ 
+ {
+ "classType":"PickerTextfildTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Date of birth",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"That postcode doesn't look right",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ }
+ },
+ "Height": 35
+ },
+ {
+ "classType":"FindAddressTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Postcode",
+ "dropDownArray":[],
+ "text":""
+ },
+ "button":{
+ "placeholder":"Find address",
+ "dropDownArray":[]
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"DropDownTxtFieldTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Select your Address",
+ "dropDownArray":[],
+ "text":"",
+ "isCellShown": "No"
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"Don't forget your house number",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ }
+ },
+ "Height": 35
+ },
+ {
+ "classType":"TxtFieldTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"First Address Line",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"TxtFieldTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Second Address Line",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"TxtFieldTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Third Address Line",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"Don't forget your town",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ }
+ },
+ "Height": 35
+ },
+ {
+ "classType":"TxtFieldTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Town",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"Don't forget your County",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ }
+ },
+ "Height": 35
+ },
+ {
+ "classType":"TxtFieldTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"County",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"linkButtonTableViewCell",
+ "metaData":{
+ "button":{
+ "placeholder":"Why do we need this information?",
+ "dropDownArray":[]
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"That mobile number doesn't look right",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ }
+ },
+ "Height": 35
+ },
+ {
+ "classType":"NumericTextTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Mobile number",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ {
+ "classType":"ErrorTableViewCell",
+ "metaData":{
+ "lable":{
+ "title":"This does'nt look loke an email address",
+ "dropDownArray":[],
+ "isErrorShow": "No"
+ }
+ },
+ "Height": 35
+ },
+ {
+ "classType":"EmailTxtTableViewCell",
+ "metaData":{
+ "textField1":{
+ "placeholder":"Email",
+ "dropDownArray":[],
+ "text":""
+ }
+ },
+ "Height": 40
+ },
+ 
+ {
+ "classType":"ButtonTableViewCell",
+ "metaData":{
+ "button":{
+ "placeholder":"Register",
+ "dropDownArray":[]
+ }
+ },
+ "Height": 100
+ },
+ {
+ "classType":"linkButtonTableViewCell",
+ "metaData":{
+ "button":{
+ "placeholder":"Back",
+ "dropDownArray":[]
+ }
+ },
+ "Height": 40
+ },
+ 
+ 
+ 
+ ]

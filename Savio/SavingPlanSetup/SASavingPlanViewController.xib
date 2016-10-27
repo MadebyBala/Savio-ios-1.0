@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="gotham-rounded-book-2.otf">
+            <string>GothamRounded-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SASavingPlanViewController" customModule="Savio" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraButton" destination="Ola-jz-tZL" id="WCw-eZ-lGD"/>
+                <outlet property="savingPlanTitleLabel" destination="M9o-cd-Fof" id="IVZ-jL-KJe"/>
+                <outlet property="scrlView" destination="g2W-Wi-2Eu" id="pUM-zm-Zmg"/>
+                <outlet property="tblView" destination="MUm-JV-X8Q" id="TWU-IH-I3j"/>
+                <outlet property="tblViewHt" destination="YPG-To-DdR" id="jir-cu-Dsi"/>
+                <outlet property="topBackgroundImageView" destination="Ohz-oo-qwT" id="LVI-61-nnX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2W-Wi-2Eu">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7I-Oc-D2D">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="192"/>
+                            <color key="backgroundColor" red="0.63921570780000003" green="0.63529413940000001" blue="0.63921570780000003" alpha="1" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="192" id="8Rw-M4-dcW"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ohz-oo-qwT">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="192"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="192" id="hAM-Zq-DUq"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9o-cd-Fof">
+                            <rect key="frame" x="267" y="130" width="65" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="Exn-uf-WnG"/>
+                                <constraint firstAttribute="width" constant="65" id="NLk-7I-syd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="10"/>
+                            <color key="textColor" red="0.21176470589999999" green="0.21960784310000001" blue="0.2666666667" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ola-jz-tZL">
+                            <rect key="frame" x="274" y="71" width="51" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="faa-Xu-AFU"/>
+                                <constraint firstAttribute="width" constant="51" id="sGy-fv-Xeu"/>
+                            </constraints>
+                            <state key="normal" image="generic-camera.png"/>
+                            <connections>
+                                <action selector="cameraButtonPressed:" destination="-1" eventType="touchUpInside" id="hPH-08-BCT"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-JV-X8Q">
+                            <rect key="frame" x="35" y="246" width="530" height="400"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="400" id="YPG-To-DdR"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="0SO-TL-uzJ"/>
+                                <outlet property="delegate" destination="-1" id="fyW-Hv-l9x"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MUm-JV-X8Q" firstAttribute="leading" secondItem="g2W-Wi-2Eu" secondAttribute="leading" constant="35" id="0Ib-WT-4Ev"/>
+                        <constraint firstItem="x7I-Oc-D2D" firstAttribute="leading" secondItem="g2W-Wi-2Eu" secondAttribute="leading" id="4uv-sM-vAW"/>
+                        <constraint firstItem="Ola-jz-tZL" firstAttribute="top" secondItem="g2W-Wi-2Eu" secondAttribute="top" constant="71" id="7Be-ZT-BvV"/>
+                        <constraint firstAttribute="trailing" secondItem="x7I-Oc-D2D" secondAttribute="trailing" id="7Ff-s0-eKt"/>
+                        <constraint firstAttribute="trailing" secondItem="Ohz-oo-qwT" secondAttribute="trailing" id="N2y-Ro-Uu5"/>
+                        <constraint firstItem="Ola-jz-tZL" firstAttribute="centerX" secondItem="g2W-Wi-2Eu" secondAttribute="centerX" id="PwN-Kl-HGT"/>
+                        <constraint firstItem="MUm-JV-X8Q" firstAttribute="top" secondItem="Ohz-oo-qwT" secondAttribute="bottom" constant="54" id="StX-z0-J0h"/>
+                        <constraint firstAttribute="bottom" secondItem="M9o-cd-Fof" secondAttribute="bottom" constant="460" id="Utc-eZ-vf7"/>
+                        <constraint firstItem="M9o-cd-Fof" firstAttribute="top" secondItem="g2W-Wi-2Eu" secondAttribute="top" constant="130" id="Zp6-DM-nmn"/>
+                        <constraint firstItem="x7I-Oc-D2D" firstAttribute="centerX" secondItem="g2W-Wi-2Eu" secondAttribute="centerX" id="c6p-LE-Kte"/>
+                        <constraint firstAttribute="bottom" secondItem="MUm-JV-X8Q" secondAttribute="bottom" constant="-46" id="d8l-0o-ZMu"/>
+                        <constraint firstItem="Ohz-oo-qwT" firstAttribute="top" secondItem="g2W-Wi-2Eu" secondAttribute="top" id="m9Y-jx-UhY"/>
+                        <constraint firstItem="x7I-Oc-D2D" firstAttribute="top" secondItem="g2W-Wi-2Eu" secondAttribute="top" id="tDg-hf-x0M"/>
+                        <constraint firstItem="M9o-cd-Fof" firstAttribute="centerX" secondItem="g2W-Wi-2Eu" secondAttribute="centerX" id="uI8-Iv-Eeh"/>
+                        <constraint firstAttribute="trailing" secondItem="MUm-JV-X8Q" secondAttribute="trailing" constant="35" id="yAp-Qf-qsa"/>
+                        <constraint firstItem="Ohz-oo-qwT" firstAttribute="leading" secondItem="g2W-Wi-2Eu" secondAttribute="leading" id="yRb-0F-vWH"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="d8l-0o-ZMu"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="7mi-77-xfg"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="g2W-Wi-2Eu" secondAttribute="bottom" id="HlR-Vz-mhB"/>
+                <constraint firstItem="g2W-Wi-2Eu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zlb-qP-sHw"/>
+                <constraint firstAttribute="trailing" secondItem="g2W-Wi-2Eu" secondAttribute="trailing" id="lY1-7a-Mj5"/>
+                <constraint firstItem="g2W-Wi-2Eu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zkm-Nt-7b4"/>
+            </constraints>
+            <point key="canvasLocation" x="405" y="-1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="generic-camera.png" width="51" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,65 @@
+ [
+  {
+  "title": "Start plan",
+  "image": "menu-start.png",
+  "activeImage": "menu-active-start.png",
+  "className": "SACreateSavingPlanViewController",
+  "showInMenu": "Yes"
+  },
+  {
+  "title": "Your progress",
+  "image": "menu-progress.png",
+  "activeImage": "menu-active-progress.png",
+  "className": "SAProgressViewController",
+  "showInMenu": "Yes"
+  },
+  {
+  "title": "Update plan",
+  "image": "menu-update.png",
+  "activeImage": "menu-active-update.png",
+  "className": "SASavingPlanViewController",
+  "showInMenu": "Yes"
+  },
+  {
+  "title": "Switch plans",
+  "image": "menu-switch.png",
+  "activeImage": "menu-active-switch.png",
+  "className": "SASwitchViewController",
+  "showInMenu": "Yes"
+  },
+  {
+  "title": "Offers",
+  "image": "menu-offers.png",
+  "activeImage": "menu-active-offers.png",
+  "className": "SAOfferListViewController",
+  "showInMenu": "Yes"
+  },
+  {
+  "title": "Wish List",
+  "image": "menu-whishlist.png",
+  "activeImage": "menu-active-whishlist.png",
+  "className": "SAWishListViewController",
+  "showInMenu": "Yes"
+  },
+  {
+  "title": "Spend now",
+  "image": "menu-spend.png",
+  "activeImage": "menu-active-spend.png",
+  "className": "SASpendViewController",
+  "showInMenu": "Yes"
+  },
+  {
+  "title": "Settings",
+  "image": "menu-settings.png",
+  "activeImage": "menu-active-settings.png",
+  "className": "SASettingsViewController",
+  "showInMenu": "Yes"
+  },
+  {
+  "title": "Logout",
+  "image": "menu-logout.png",
+  "activeImage": "menu-active-logout.png",
+  "className": "SignOut",
+  "showInMenu": "Yes"
+  }
+  ]

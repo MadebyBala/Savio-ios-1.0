@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRounded-Light.otf">
+            <string>GothamRounded-Light</string>
+        </mutableArray>
+        <mutableArray key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SAThankYouViewController" customModule="Savio" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savivo-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ozg-IG-Vw9">
+                    <rect key="frame" x="280" y="38" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="jRP-sc-xRg"/>
+                        <constraint firstAttribute="height" constant="40" id="jfL-hj-z57"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Transaction is Completed" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U9-z1-N6A">
+                    <rect key="frame" x="30" y="190" width="540" height="153"/>
+                    <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="22"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcd-5c-sXZ">
+                    <rect key="frame" x="30" y="500" width="540" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhF-3a-any">
+                            <rect key="frame" x="0.0" y="0.0" width="540" height="40"/>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.64313725489999995" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="sU3-FA-i60"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="20"/>
+                            <state key="normal" title="Continue">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="continueButtonPressed:" destination="-1" eventType="touchUpInside" id="2TD-ey-Bri"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.56862745100000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="Ea6-kb-J2g"/>
+                        <constraint firstItem="NhF-3a-any" firstAttribute="top" secondItem="bcd-5c-sXZ" secondAttribute="top" id="QxW-0d-nD3"/>
+                        <constraint firstAttribute="trailing" secondItem="NhF-3a-any" secondAttribute="trailing" id="Sla-te-ucv"/>
+                        <constraint firstItem="NhF-3a-any" firstAttribute="leading" secondItem="bcd-5c-sXZ" secondAttribute="leading" id="XF8-8s-AM3"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="z81-NN-DUT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-dd-i59">
+                    <rect key="frame" x="30" y="120" width="540" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="540" id="Pzx-pd-7ZA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="26"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bcd-5c-sXZ" secondAttribute="trailing" constant="30" id="2QS-fP-ILv"/>
+                <constraint firstItem="9Bf-dd-i59" firstAttribute="top" secondItem="Ozg-IG-Vw9" secondAttribute="bottom" constant="42" id="5SF-cN-oQp"/>
+                <constraint firstAttribute="trailing" secondItem="7U9-z1-N6A" secondAttribute="trailing" constant="30" id="6Mj-ls-Ueu"/>
+                <constraint firstItem="bcd-5c-sXZ" firstAttribute="top" secondItem="7U9-z1-N6A" secondAttribute="bottom" constant="157" id="8Xi-eI-Bej"/>
+                <constraint firstItem="bcd-5c-sXZ" firstAttribute="top" secondItem="7U9-z1-N6A" secondAttribute="bottom" constant="157" id="EAq-ZC-V3a"/>
+                <constraint firstAttribute="trailing" secondItem="bcd-5c-sXZ" secondAttribute="trailing" constant="30" id="M9D-fP-WOU"/>
+                <constraint firstItem="Ozg-IG-Vw9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MDs-yN-uCk"/>
+                <constraint firstItem="7U9-z1-N6A" firstAttribute="top" secondItem="Ozg-IG-Vw9" secondAttribute="bottom" constant="112" id="OQT-Bc-bDa"/>
+                <constraint firstItem="7U9-z1-N6A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="PHZ-db-SgC"/>
+                <constraint firstAttribute="bottom" secondItem="7U9-z1-N6A" secondAttribute="bottom" constant="257" id="XeY-bJ-09u"/>
+                <constraint firstItem="9Bf-dd-i59" firstAttribute="trailing" secondItem="7U9-z1-N6A" secondAttribute="trailing" id="aSx-Cn-8te"/>
+                <constraint firstItem="bcd-5c-sXZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="bOB-ND-bPK"/>
+                <constraint firstItem="9Bf-dd-i59" firstAttribute="leading" secondItem="7U9-z1-N6A" secondAttribute="leading" id="iaK-cU-ujj"/>
+                <constraint firstItem="7U9-z1-N6A" firstAttribute="top" secondItem="9Bf-dd-i59" secondAttribute="bottom" constant="8" symbolic="YES" id="iwQ-Lp-cZe"/>
+                <constraint firstItem="bcd-5c-sXZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="plf-LX-Ju9"/>
+                <constraint firstItem="Ozg-IG-Vw9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="38" id="yRT-RW-v5h"/>
+            </constraints>
+            <point key="canvasLocation" x="395" y="173"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="savivo-logo.png" width="85" height="85"/>
+    </resources>
+</document>

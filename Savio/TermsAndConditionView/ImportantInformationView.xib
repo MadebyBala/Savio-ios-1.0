@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+        </mutableArray>
+        <mutableArray key="gotham-rounded-book-2.otf">
+            <string>GothamRounded-Book</string>
+            <string>GothamRounded-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImportantInformationView" customModule="Savio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0c-tE-4TG">
+                    <rect key="frame" x="10" y="10" width="580" height="580"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pp-S0-ESN">
+                            <rect key="frame" x="10" y="40" width="560" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="560" id="QDP-sM-nfa"/>
+                                <constraint firstAttribute="height" constant="21" id="WIT-rR-TZp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-4L-dLT">
+                            <rect key="frame" x="10" y="76" width="70" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="2QB-05-qdq"/>
+                                <constraint firstAttribute="height" constant="21" id="PGS-w7-qKa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-dp-8S9">
+                            <rect key="frame" x="10" y="489" width="560" height="42"/>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.63137254899999995" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="XPd-ke-TAi"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slp-4J-ir4">
+                            <rect key="frame" x="10" y="489" width="560" height="40"/>
+                            <color key="backgroundColor" red="0.36470588240000001" green="0.37254901959999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dhx-Sn-lmc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="17"/>
+                            <state key="normal" title="Got It">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                    <color key="value" red="0.95294117647058818" green="0.68627450980392157" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                    <size key="value" width="0.0" height="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="gotItButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="3YM-N8-a0A"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RB6-7D-MCA">
+                            <rect key="frame" x="10" y="100" width="560" height="375"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda..</string>
+                            <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6rm-dp-8S9" firstAttribute="leading" secondItem="C0c-tE-4TG" secondAttribute="leading" constant="10" id="04x-xu-WYB"/>
+                        <constraint firstItem="RB6-7D-MCA" firstAttribute="leading" secondItem="C0c-tE-4TG" secondAttribute="leading" constant="10" id="5tv-vI-fyL"/>
+                        <constraint firstAttribute="trailing" secondItem="RB6-7D-MCA" secondAttribute="trailing" constant="10" id="6YF-9p-sSw"/>
+                        <constraint firstAttribute="trailing" secondItem="6rm-dp-8S9" secondAttribute="trailing" constant="10" id="Fa3-Lu-XJ5"/>
+                        <constraint firstItem="6Pp-S0-ESN" firstAttribute="leading" secondItem="C0c-tE-4TG" secondAttribute="leading" constant="10" id="RBO-dN-8qO"/>
+                        <constraint firstItem="D3W-4L-dLT" firstAttribute="top" secondItem="6Pp-S0-ESN" secondAttribute="bottom" constant="15" id="SeG-Ve-tcz"/>
+                        <constraint firstItem="RB6-7D-MCA" firstAttribute="top" secondItem="D3W-4L-dLT" secondAttribute="bottom" constant="3" id="WPI-0s-Ni0"/>
+                        <constraint firstAttribute="trailing" secondItem="slp-4J-ir4" secondAttribute="trailing" constant="10" id="Wuq-QM-nJv"/>
+                        <constraint firstItem="slp-4J-ir4" firstAttribute="top" secondItem="RB6-7D-MCA" secondAttribute="bottom" constant="14" id="hJ4-rT-7kP"/>
+                        <constraint firstItem="6rm-dp-8S9" firstAttribute="top" secondItem="RB6-7D-MCA" secondAttribute="bottom" constant="14" id="hiz-nP-3AK"/>
+                        <constraint firstItem="RB6-7D-MCA" firstAttribute="centerX" secondItem="C0c-tE-4TG" secondAttribute="centerX" id="m3O-cY-OoH"/>
+                        <constraint firstItem="6Pp-S0-ESN" firstAttribute="top" secondItem="C0c-tE-4TG" secondAttribute="top" constant="40" id="oov-xw-6le"/>
+                        <constraint firstItem="slp-4J-ir4" firstAttribute="leading" secondItem="C0c-tE-4TG" secondAttribute="leading" constant="10" id="paJ-fF-x3h"/>
+                        <constraint firstItem="D3W-4L-dLT" firstAttribute="leading" secondItem="C0c-tE-4TG" secondAttribute="leading" constant="10" id="v2B-yM-fZ9"/>
+                        <constraint firstAttribute="bottom" secondItem="slp-4J-ir4" secondAttribute="bottom" constant="51" id="wzT-Zw-vyp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="C0c-tE-4TG" secondAttribute="bottom" constant="10" id="1jU-lb-RvJ"/>
+                <constraint firstItem="C0c-tE-4TG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="TQM-kE-ZRB"/>
+                <constraint firstAttribute="trailing" secondItem="C0c-tE-4TG" secondAttribute="trailing" constant="10" id="jk6-Lc-Ccx"/>
+                <constraint firstItem="C0c-tE-4TG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="kW7-LF-eny"/>
+            </constraints>
+            <connections>
+                <outlet property="btnVeBg" destination="6rm-dp-8S9" id="B68-Es-mOR"/>
+                <outlet property="gotItButton" destination="slp-4J-ir4" id="ZSX-8s-1nK"/>
+                <outlet property="lblHeader" destination="6Pp-S0-ESN" id="tb7-QP-Mir"/>
+                <outlet property="termsAndConditionTextView" destination="RB6-7D-MCA" id="ev3-J2-9Tp"/>
+            </connections>
+            <point key="canvasLocation" x="379" y="331"/>
+        </view>
+    </objects>
+</document>

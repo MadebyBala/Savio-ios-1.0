@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SwitchTableViewCell" customModule="Savio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oTM-tf-3ND">
+                        <rect key="frame" x="241" y="6" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="JWL-h8-CP4"/>
+                            <constraint firstAttribute="width" constant="49" id="PX6-Hi-NcT"/>
+                        </constraints>
+                        <connections>
+                            <action selector="otpSwitchChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Adg-9m-o6g"/>
+                        </connections>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MH-Hd-O21">
+                        <rect key="frame" x="30" y="11" width="167" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="167" id="1um-ef-HgY"/>
+                            <constraint firstAttribute="height" constant="21" id="5d1-vs-b2f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oTM-tf-3ND" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="6q2-yT-OIP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3MH-Hd-O21" secondAttribute="bottom" constant="3" id="Q9a-g3-VVL"/>
+                    <constraint firstItem="3MH-Hd-O21" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="22" id="rIh-Dp-8xN"/>
+                    <constraint firstItem="3MH-Hd-O21" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="sGn-Uz-lEV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oTM-tf-3ND" secondAttribute="trailing" constant="22" id="tBV-uV-n5i"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oTM-tf-3ND" secondAttribute="bottom" constant="-2" id="tuy-e3-Nxr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="otpLabel" destination="3MH-Hd-O21" id="Xsm-Bh-YiO"/>
+                <outlet property="otpSwitch" destination="oTM-tf-3ND" id="3P9-Dt-TUg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

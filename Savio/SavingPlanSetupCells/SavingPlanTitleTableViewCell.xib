@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SavingPlanTitleIdentifier" id="KGk-i7-Jjw" customClass="SavingPlanTitleTableViewCell" customModule="Savio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter title here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnR-hA-FIB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <color key="backgroundColor" red="0.36470588240000001" green="0.37254901959999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="wi9-JA-E9e"/>
+                        </constraints>
+                        <color key="textColor" red="0.63921570780000003" green="0.63529413940000001" blue="0.63921570780000003" alpha="1" colorSpace="deviceRGB"/>
+                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="WxH-Li-c9n"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xnR-hA-FIB" secondAttribute="bottom" id="RS8-0p-okU"/>
+                    <constraint firstItem="xnR-hA-FIB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SCG-3n-fJC"/>
+                    <constraint firstItem="xnR-hA-FIB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Xul-3F-Psc"/>
+                    <constraint firstItem="xnR-hA-FIB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="br5-k7-Y4l"/>
+                    <constraint firstItem="xnR-hA-FIB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fkn-U2-JSn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xnR-hA-FIB" secondAttribute="trailing" constant="-8" id="lIB-s7-Ct7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xnR-hA-FIB" secondAttribute="bottom" id="nzE-gt-IOz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xnR-hA-FIB" secondAttribute="bottom" id="ryU-sW-d3W"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="RS8-0p-okU"/>
+                        <exclude reference="SCG-3n-fJC"/>
+                        <exclude reference="br5-k7-Y4l"/>
+                        <exclude reference="nzE-gt-IOz"/>
+                        <exclude reference="ryU-sW-d3W"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleTextField" destination="xnR-hA-FIB" id="4Hd-sa-IUI"/>
+            </connections>
+            <point key="canvasLocation" x="646" y="173"/>
+        </tableViewCell>
+    </objects>
+</document>

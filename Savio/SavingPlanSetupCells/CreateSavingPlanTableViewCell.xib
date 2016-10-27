@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreateSavingPlanTableViewCellIdentifier" id="KGk-i7-Jjw" customClass="CreateSavingPlanTableViewCell" customModule="Savio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-gf-7fa">
+                        <rect key="frame" x="0.0" y="18" width="320" height="43"/>
+                        <color key="backgroundColor" red="0.47450980390000003" green="0.71764705880000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="EO4-al-dqs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPM-64-FpA">
+                        <rect key="frame" x="0.0" y="18" width="320" height="40"/>
+                        <color key="backgroundColor" red="0.63137254899999995" green="0.83921568629999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="dfo-eP-3FR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
+                        <state key="normal" title="Create plan">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nPM-64-FpA" secondAttribute="trailing" id="3WO-8s-6KM"/>
+                    <constraint firstAttribute="trailing" secondItem="IBe-gf-7fa" secondAttribute="trailing" id="7J0-ZA-3bp"/>
+                    <constraint firstItem="IBe-gf-7fa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QFy-aI-8MN"/>
+                    <constraint firstItem="nPM-64-FpA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="SAJ-VF-wyn"/>
+                    <constraint firstItem="nPM-64-FpA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="q9I-Pe-hs2"/>
+                    <constraint firstItem="IBe-gf-7fa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="sg9-Kp-RAh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="createSavingPlanButton" destination="nPM-64-FpA" id="y77-hn-F8o"/>
+            </connections>
+            <point key="canvasLocation" x="416" y="314.5"/>
+        </tableViewCell>
+    </objects>
+</document>

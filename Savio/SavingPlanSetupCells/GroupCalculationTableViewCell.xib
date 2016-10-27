@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCalculationCellIdentifier" id="KGk-i7-Jjw" customClass="GroupCalculationTableViewCell" customModule="Savio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZs-4l-H7x">
+                        <rect key="frame" x="20" y="50" width="280" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="MtX-I4-IS8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3O-H4-Wak">
+                        <rect key="frame" x="20" y="8" width="280" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="NHJ-Ve-8rP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="b3O-H4-Wak" secondAttribute="trailing" constant="20" id="0Ik-jI-I2b"/>
+                    <constraint firstItem="nZs-4l-H7x" firstAttribute="top" secondItem="b3O-H4-Wak" secondAttribute="bottom" constant="8" id="0a6-5X-hZj"/>
+                    <constraint firstItem="b3O-H4-Wak" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="E9a-vU-XXZ"/>
+                    <constraint firstItem="nZs-4l-H7x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FuP-cB-HRh"/>
+                    <constraint firstAttribute="trailing" secondItem="nZs-4l-H7x" secondAttribute="trailing" constant="20" id="Rbp-lM-grH"/>
+                    <constraint firstAttribute="bottom" secondItem="nZs-4l-H7x" secondAttribute="bottom" id="gWH-Qc-nV0"/>
+                    <constraint firstItem="b3O-H4-Wak" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hT5-xV-liY"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0a6-5X-hZj"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.36470588240000001" green="0.37254901959999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="BGContentView" destination="H2p-sc-9uM" id="rOv-Ay-XDY"/>
+                <outlet property="calculationLabel" destination="b3O-H4-Wak" id="zW3-Dx-OoA"/>
+                <outlet property="percentageCalculationLabel" destination="nZs-4l-H7x" id="FTE-7e-eXo"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
